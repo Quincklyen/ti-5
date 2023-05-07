@@ -131,7 +131,7 @@ p.subtitle {
 }
 
 
-.skill-level {
+.skill-level dd{
     margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
@@ -147,7 +147,7 @@ p.subtitle {
 }
 
 
-.skill-item {
+.skill-item dt{
     text-transform: lowercase;
 }
 
