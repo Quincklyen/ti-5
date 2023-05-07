@@ -115,6 +115,62 @@ p.subtitle {
     color: var(--green);
 }
 
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+
+.skill-level {
+    margin: 4px 0 20px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--black);
+    border-radius: 16px;
+}
+
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--green);
+    border-radius: 8px;
+}
+
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+
+.skill-item_html {
+    background-image: url("../img/icon-html.svg");
+}
+
+
+.skill-item_java {
+    background-image: url("../img/icon-java.svg");
+}
+
+
+.skill-item_python {
+    background-image: url("../img/icon-python.svg");
+}
+
+
+.skill-item_cpp {
+    background-image: url("../img/icon-c++.svg");
+}
+
 .contact {
     margin: 0;
     padding: 0;
