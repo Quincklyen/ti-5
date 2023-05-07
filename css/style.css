@@ -25,28 +25,23 @@ body {
     color:var(--black)
 }
 
+img {
+    border-radius: 50%;
+}
+
 h1 {
-    font-family: 'Open Sans';
-    
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 110%;
 }
 
 h2 {
-    font-family: 'Open Sans';
-    
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 120%;
 }
 
 a {
-    font-family: 'Open Sans';
-
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
@@ -55,14 +50,31 @@ a {
 }
 
 button {
-    font-family: 'Open Sans';
-    
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
 
     text-align: center;
+
+    padding: 0;
+    border: none;
+    color: var(--green);
+    background-color: var(--white);
+    cursor: pointer;
+
+    text-transform: lowercase;
+
+    box-sizing: border-box;
+
+    padding: 6px 10px 10px;
+    border: 1px solid #09A494;
+    border-radius: 8px;
+    
+}
+
+button:hover {
+    color: var(--white);
+    background-color: var(--green);
 }
 
 footer {
@@ -79,6 +91,118 @@ p.subtitle {
     line-height: 120%;
 
     color:var(--green);
+}
+
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+
+
+    text-align: center;
+
+    color:var(--black);
+}
+
+.main-nav a:hover {
+    color: var(--green);
+}
+
+.contact {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--black);
+
+    padding-left: 42px;
+
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.contact a:hover {
+    color: var(--green);
+}
+
+.contact-link_phone {
+    background-image: url(../img/contactsicon-phone.svg);
+}
+
+.contact-link_mail {
+    background-image: url(../img/contactsicon-mail.svg);
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.social a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #09A494;
+    border-radius: 5e+07px;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.social a:hover {
+    background-color: var(--green);
+}
+
+.social-link_github {
+    background-image: url(../img/property-github.svg);
+}
+
+.social-link_gitlab {
+    background-image: url(../img/property-gitlab.svg);
+}
+
+.social-link_telegram {
+    background-image: url(../img/property-telegram.svg);
+}
+
+.social-link_vk {
+    background-image: url(../img/property-vk.svg);
+}
+
+.social span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 :root {
