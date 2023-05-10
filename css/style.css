@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.my-photo {
+    border-radius: 50%;
+}
+
 div.container {
     min-width: 320px;
 
@@ -23,10 +27,6 @@ body {
     line-height: 150%;
 
     color:var(--black)
-}
-
-img {
-    border-radius: 50%;
 }
 
 h1 {
@@ -59,7 +59,7 @@ button {
     padding: 0;
     border: none;
     color: var(--green);
-    background-color: var(--white);
+    background-color: transparent;
     cursor: pointer;
 
     text-transform: lowercase;
@@ -72,18 +72,18 @@ button {
     
 }
 
-button:hover {
+/*button:hover {
     color: var(--white);
     background-color: var(--green);
-}
+}*/
 
-footer {
+.main-footer {
     color:var(--white);
     background-color: var(--black);
 }
 
 p.subtitle {
-    font-family: 'Open Sans';
+    font-family: "Open Sans", "Arial", sans-serif;
 
     font-style: normal;
     font-weight: 400;
@@ -99,7 +99,7 @@ p.subtitle {
 
     padding: 10px 15px;
 
-    font-family: 'Open Sans';
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -121,7 +121,6 @@ p.subtitle {
     line-height: 1;
 }
 
-
 .skill-list dt {
     margin-bottom: 6px;
     padding: 5px 0 5px 38px;
@@ -130,42 +129,33 @@ p.subtitle {
     background-size: 30px;
 }
 
-
-.skill-level dd{
+.skill-list dd{
     margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
     border: 1px solid var(--black);
     border-radius: 16px;
+
+    text-transform: lowercase;
 }
 
-
-.skill-level div {
+.skill-list div {
     height: 14px;
     background-color: var(--green);
     border-radius: 8px;
 }
 
-
-.skill-item dt{
-    text-transform: lowercase;
-}
-
-
 .skill-item_html {
     background-image: url("../img/icon-html.svg");
 }
-
 
 .skill-item_java {
     background-image: url("../img/icon-java.svg");
 }
 
-
 .skill-item_python {
     background-image: url("../img/icon-python.svg");
 }
-
 
 .skill-item_cpp {
     background-image: url("../img/icon-c++.svg");
@@ -190,7 +180,7 @@ p.subtitle {
     padding-left: 42px;
 
     background-repeat: no-repeat;
-    background-position: 0%;
+    background-position: 0;
 }
 
 .contact a:hover {
@@ -222,7 +212,7 @@ p.subtitle {
     width: 50px;
     height: 50px;
     border: 1px solid #09A494;
-    border-radius: 5e+07px;
+    border-radius: 50%;
 
     background-repeat: no-repeat;
     background-position: 50%;
@@ -248,7 +238,7 @@ p.subtitle {
     background-image: url(../img/property-vk.svg);
 }
 
-.social span {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
