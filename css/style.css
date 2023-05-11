@@ -72,10 +72,10 @@ button {
     
 }
 
-/*button:hover {
+button:hover {
     color: var(--white);
     background-color: var(--green);
-}*/
+}
 
 .main-footer {
     color:var(--white);
@@ -127,6 +127,8 @@ p.subtitle {
     background-position: left;
     background-repeat: no-repeat;
     background-size: 30px;
+
+    text-transform: lowercase;
 }
 
 .skill-list dd{
@@ -135,8 +137,6 @@ p.subtitle {
     font-size: 0;
     border: 1px solid var(--black);
     border-radius: 16px;
-
-    text-transform: lowercase;
 }
 
 .skill-list div {
